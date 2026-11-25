@@ -5,14 +5,14 @@ A responsive, blue-and-white multi-page website for a poultry business (chicks, 
 ## Pages
 - `index.html` - home: hero, trust highlights, product previews
 - `products.html` - chicks, eggs and poultry feeds
-- `about.html` - why customers choose Kwaka'Poultry
+- `about.html` - about the business
 - `contact.html` - phone and WhatsApp enquiries
 
 ## Run locally
-Open `index.html` in a browser. Fonts load from Google Fonts (needs internet; falls back to system fonts offline).
+Open `index.html` in a browser. Fonts load from Google Fonts (falls back to system fonts offline).
 
 ## Before publishing
-Replace the demo details: `+254700000000` / `+254 700 000 000` (phone and WhatsApp), and `Your town, Kenya` in `contact.html`.
+Replace the placeholder phone number `+254700000000` in `contact.html` and the footers.
 
 ## Image credits
-Photos in `images/` are CC0 / public domain from Wikimedia Commons, so no attribution is required.
+Photos in `images/` are CC0 / public domain from Wikimedia Commons; no attribution required.
