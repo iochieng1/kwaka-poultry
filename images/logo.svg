@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kwaka'Poultry logo">
-  <circle cx="32" cy="32" r="30" fill="#1457A6"/>
-  <ellipse cx="32" cy="36" rx="13" ry="17" fill="#FFFFFF"/>
-  <path d="M32 19c-3-6-9-4-8 1 2-1 4 0 5 2 1-1 2-2 3-3z" fill="#EAF2FB"/>
-  <circle cx="35" cy="29" r="1.8" fill="#0B3974"/>
-  <path d="M40 31l6 2-6 2z" fill="#F2A900"/>
-  <path d="M28 14c0-4 3-5 4-2 1-3 4-2 4 1-3-1-5 0-8 1z" fill="#D94B3D"/>
-</svg>

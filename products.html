@@ -1,54 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | Kwaka's Poultry</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Explore chicks, eggs and poultry feeds from Kwaka'Poultry."><title>Products | Kwaka'Poultry</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo-link"><img src="images/logo.svg" alt="" class="logo-img"><h2 class="logo">Kwaka'Poultry</h2></a>
-            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html" class="active">Products</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="products">
-            <h2>Our Products</h2>
-            <div class="product-container">
-                <div class="product-card">
-                    <img src="images/chickens.jpg" alt="Poultry chicks">
-                    <h3>Quality Chicks</h3>
-                    <p>Explore our available poultry chicks.</p>
-                    <a href="contact.html" class="btn">Make an enquiry</a>
-                </div>
-                <div class="product-card">
-                    <img src="images/eggs.jpg" alt="Fresh poultry eggs">
-                    <h3>Fresh Eggs</h3>
-                    <p>Ask about available eggs and bulk orders.</p>
-                    <a href="contact.html" class="btn">Make an enquiry</a>
-                </div>
-                <div class="product-card">
-                    <img src="images/feeds.jpg" alt="Poultry feeds">
-                    <h3>Poultry Feeds</h3>
-                    <p>Find suitable feeds for your poultry.</p>
-                    <a href="contact.html" class="btn">Make an enquiry</a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <img src="images/logo.svg" alt="Kwaka'Poultry logo" class="footer-logo">
-        <p>&copy; 2026 Kwaka'Poultry. All rights reserved.</p>
-        <p><a href="tel:+254700000000">Call</a> | <a href="https://wa.me/254700000000">WhatsApp</a></p>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+<header class="header"><a class="logo" href="index.html"><span class="logo-icon">K</span><span>Kwaka'<b>Poultry</b></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="nav"><a href="index.html">Home</a><a class="active" href="products.html">Products</a><a href="about.html">Why Kwaka'Poultry</a><a class="nav-contact" href="contact.html">Contact / Order</a></nav></header>
+<main>
+<section class="page-hero"><span class="eyebrow">OUR PRODUCTS</span><h1>Good choices for<br><span>every poultry keeper.</span></h1><p>Browse our main product categories. Contact us for current stock, prices and order quantities.</p></section>
+<section class="section product-list">
+  <article class="product-feature" id="chicks"><img src="images/chickens.jpg" alt="Chicks together"><div><span class="card-label">01 / START STRONG</span><h2>Chicks</h2><p>Planning to start or grow your flock? Contact us to ask about available chicks, breeds, age, quantities and collection or delivery arrangements.</p><a class="btn btn-blue order-link" data-product="Chicks" href="contact.html">Enquire about chicks →</a></div></article>
+  <article class="product-feature reverse" id="eggs"><img src="images/eggs.jpg" alt="Eggs in a carton"><div><span class="card-label">02 / FARM FRESH</span><h2>Eggs</h2><p>Looking for eggs for your home, shop or food business? Ask us about availability, tray quantities, pricing and bulk orders.</p><a class="btn btn-blue order-link" data-product="Eggs" href="contact.html">Enquire about eggs →</a></div></article>
+  <article class="product-feature" id="feeds"><img src="images/feeds.jpg" alt="Poultry feeder"><div><span class="card-label">03 / FEED WELL</span><h2>Poultry feeds</h2><p>Different stages need different feed plans. Ask about available feed types, bag sizes and recommendations for your flock.</p><a class="btn btn-blue order-link" data-product="Poultry feeds" href="contact.html">Enquire about feeds →</a></div></article>
+</section>
+<section class="blue-panel"><div><span class="eyebrow light">NOT SURE WHAT YOU NEED?</span><h2>We can help you<br>find the right option.</h2><p>Tell us what you're looking for and our team will guide you.</p></div><a class="btn btn-white" href="contact.html">Talk to us <span>→</span></a></section>
+</main><footer class="footer"><a class="logo" href="index.html"><span class="logo-icon">K</span><span>Kwaka'<b>Poultry</b></span></a><p>Quality poultry products. Friendly service.</p><small>© <span class="year"></span> Kwaka'Poultry. All rights reserved.</small></footer><script src="script.js"></script></body></html>

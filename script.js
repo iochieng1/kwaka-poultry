@@ -1,9 +1,15 @@
-const toggle = document.querySelector(".menu-toggle");
-const links = document.querySelector(".nav-links");
+// Small progressive enhancement: mobile navigation and current year.
+const menuButton = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
 
-if (toggle && links) {
-    toggle.addEventListener("click", () => {
-        const open = links.classList.toggle("open");
-        toggle.setAttribute("aria-expanded", open);
-    });
+if (menuButton && nav) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+  });
 }
+
+document.querySelectorAll(".year").forEach((item) => {
+  item.textContent = new Date().getFullYear();
+});
