@@ -3,7 +3,7 @@
     --dark-blue: #0B3974;
     --light-blue: #EAF2FB;
     --white: #FFFFFF;
-    --text-colour: #17283D;
+    --text-color: #17283D;
 }
 
 * {
@@ -15,6 +15,11 @@
 body {
     font-family: Arial, sans-serif;
     color: var(--text-color);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
 }
 
 .navbar {
@@ -73,17 +78,132 @@ body {
     margin: 15px 0;
 }
 
+.logo-link {
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--primary-blue);
+    cursor: pointer;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: var(--primary-blue);
+}
+
+.btn,
+.product-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn:hover,
+.product-card a:hover {
+    background-color: var(--dark-blue);
+}
+
+.hero {
+    background-color: var(--light-blue);
+    padding: 100px 7%;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.products h2,
+.about h2,
+.contact h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--dark-blue);
+}
+
+.about,
+.contact {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px 7% 60px;
+    text-align: center;
+}
+
+.about p,
+.contact p {
+    margin: 15px 0;
+}
+
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 25px 7%;
+}
+
+footer a {
+    color: var(--white);
+}
+
+@media (max-width: 992px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
 
     .navbar {
-        flex-direction: column;
-        gap: 20px;
+        flex-wrap: wrap;
+        padding: 15px 7%;
+    }
+
+    .menu-toggle {
+        display: block;
     }
 
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hero {
+        padding: 60px 7%;
     }
 
     .hero h1 {
@@ -92,6 +212,10 @@ body {
 
     .product-container {
         grid-template-columns: 1fr;
+    }
+
+    .contact-actions {
+        flex-direction: column;
     }
 
 }
