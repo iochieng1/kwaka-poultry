@@ -514,3 +514,17 @@ footer a {
         text-align: center;
     }
 }
+
+.product-intro {
+    padding-top: 30px;
+}
+
+.product-intro .eyebrow {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 769px) {
+    .product-intro .about-img {
+        order: 2;
+    }
+}
