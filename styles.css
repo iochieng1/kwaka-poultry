@@ -79,7 +79,29 @@ img {
 }
 
 .logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     text-decoration: none;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+.about-img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 40px;
 }
 
 .menu-toggle {
@@ -112,7 +134,8 @@ img {
 }
 
 .hero {
-    background-color: var(--light-blue);
+    background: linear-gradient(rgba(11, 57, 116, 0.65), rgba(11, 57, 116, 0.65)),
+                url("images/hero.jpg") center / cover no-repeat;
     padding: 100px 7%;
     text-align: center;
 }
@@ -124,11 +147,12 @@ img {
 
 .hero h1 {
     font-size: 48px;
-    color: var(--dark-blue);
+    color: var(--white);
     margin-bottom: 20px;
 }
 
 .hero p {
+    color: var(--white);
     margin-bottom: 25px;
 }
 
